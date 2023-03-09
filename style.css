@@ -1,0 +1,17 @@
+#main {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+}
+
+p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 50px;
+}
