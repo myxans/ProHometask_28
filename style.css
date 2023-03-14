@@ -1,17 +1,21 @@
-#main {
+body {
     display: flex;
     align-items: center;
-    width: 100%;
 }
 
-div {
-    height: 50px;
-    width: 50px;
+input {
+    width: 100px;
+    height: 20px;
+    margin-right: 20px;
 }
 
-p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 50px;
+.new {
+    width: 20px;
+    height: 20px;
+    background: #000;
+    display: none;
+}
+
+.new.active {
+    display: block;
 }

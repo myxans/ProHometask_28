@@ -1,14 +1,15 @@
-const text = document.querySelector('p');
-const box = document.createElement('div');
-text.after(box);
+(function() {
+    const input = document.querySelector('input');
+    const box = document.querySelector('div');
 
-function start() {
-    box.style.background = '#000';
-}
 
-function end() {
-    box.style.background = 'none';
-}
+    input.addEventListener('click', function () {
+        box.classList.add('active')
+    });
 
-text.onmouseover = start;
-text.onmouseout = end;
+  document.addEventListener('mouseup', function(evt) {
+    if (input !== document.activeElement && box !== evt.target) {
+        box.classList.remove('active')
+      };
+  })
+})();
